@@ -2,37 +2,90 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>トップ - Shimizuコーチング</title>
+  <title>サポート内容 - Shimizuコーチング</title>
   <link rel="stylesheet" href="style.css">
+  
+<style>
+.accordion { cursor: pointer; padding: 10px; text-align: left; border: none; outline: none; width: 100%; font-size: 1em; background: #f0f0f0; margin-top: 10px; }
+.panel { display: none; padding: 0 10px; background: #fff; border-left: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+th { background-color: #e6f0ff; }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var acc = document.getElementsByClassName("accordion");
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      panel.style.display = panel.style.display === "block" ? "none" : "block";
+    });
+  }
+});
+</script>
+
 </head>
 <body>
   <header>
-    <h1>トップ</h1>
-    
-<nav>
-  <a href="index.html">トップ</a>
-  <a href="support.html">サポート内容</a>
-  <a href="faq.html">よくある質問</a>
-  <a href="works.html">施工事例</a>
-  <a href="contact.html">お問い合わせ</a>
-</nav>
-
+    <h1>サポート内容</h1>
+    <nav>
+      <a href="index.html">トップ</a>
+      <a href="support.html">サポート内容</a>
+      <a href="faq.html">よくある質問</a>
+      <a href="works.html">施工事例</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
   </header>
   <main>
-    
-<h2>はじめての不動産投資！</h2>
-<h3>～初心者大家さん 個別支援 サポート～</h3>
-<ul>
-  <li>預金500万円から始める利回り20％目標！</li>
-  <li>戸建賃貸事業！</li>
-  <li>物件購入後の修繕・入居付け・管理ノウハウまで支援</li>
-  <li>初心者・ベテラン問わず歓迎</li>
-</ul>
-<p>「秘密で進めたい」方も歓迎。質問しづらい空気を徹底排除。初心者の気持ちがわかる運営体制で、短いラリーで丁寧に対応します。</p>
+    <h2>料金表</h2>
 
+    <h3>【基本プラン】</h3>
+    <table>
+      <tr><th>プラン名</th><th>料金</th><th>内容</th><th>対象者</th></tr>
+      <tr><td>コンサル基本プラン</td><td>入会費：50,000円＋税<br>月額：10,000円＋税</td><td>物件選定：Chat、LINEで随時相談可。</td><td>これから不動産投資を始めたい初心者の方</td></tr>
+    </table>
+    <button class="accordion">▼ 詳細</button>
+    <div class="panel">
+      <p>不動産投資の第一歩を踏み出す方へ。<br>
+      LINEやチャットで気軽に質問できる環境を整え、物件選定から行動のサポートまで親身に対応します。<br>
+      初心者ならではの疑問や不安に寄り添いながら、あなたのペースで着実にステップアップできるよう導きます。</p>
+    </div>
+
+    <h3>【オプション】（基本プラン加入者のみ申込可能）</h3>
+    <table>
+      <tr><th>オプション名</th><th>料金</th><th>内容</th><th>対象者</th></tr>
+      <tr><td>買付同行サービス</td><td>30,000円／日（交通費別）</td><td>一都三県国道16号内側位まで。<br>スペック事前調査や交渉はお客様で。方法や話し方やワードはサポート致します！</td><td>―</td></tr>
+    </table>
+    <button class="accordion">▼ 詳細</button>
+    <div class="panel">
+      <p>実際の物件の内見・買付の際に、現地で一緒に確認・助言を行うサービス。<br>
+      土地値やリフォーム想定などの「事前スペック調査」はご自身にてお願いしますが、<br>
+      交渉方法や現地での立ち回り、話し方や効果的なワードは事前に一緒に準備・アドバイスします。</p>
+    </div>
+
+    <table>
+      <tr><td>リフォームライトプラン</td><td>100,000円</td><td>計画支援、見積レビュー、Zoom相談（最大4時間）</td><td>業者を自分で探すが、セカンドオピニオンがほしい方</td></tr>
+    </table>
+    <button class="accordion">▼ 詳細</button>
+    <div class="panel">
+      <p>「このリフォームで本当に大丈夫？」そんな不安に寄り添うセカンドオピニオン型のサポートです。<br>
+      業者の選び方、計画の立て方、間取りや設備の問題点、見積の比較方法など、Zoomで一緒に見ていきます。<br>
+      提出された見積書のレビュー（最大3社）や、ターゲット層に合ったプランへのアドバイスも行います。<br>
+      オンライン相談2回（合計最大4時間）まで対応。</p>
+    </div>
+
+    <table>
+      <tr><td>リフォームスタンダードプラン</td><td>600,000円</td><td>業者候補アドバイス、見積精査、打合せ同行（月2回）</td><td>リフォーム経験者で、段取りと見極めは任せたい方</td></tr>
+    </table>
+    <button class="accordion">▼ 詳細</button>
+    <div class="panel">
+      <p>予算に応じた業者候補を数社提案し、見積依頼用の資料づくりから精査・アドバイスまでしっかり対応。<br>
+      実際の打合せ（月2回まで、各回2時間以内）にも同席し、適切な内容・進行かをチェックします。<br>
+      「自分でもある程度知ってるけど、確実に成功させたい」方向けの安心プランです。<br>
+      ※交通費別途・対応エリア：一都三県 国道16号内側程度。</p>
+    </div>
   </main>
-  <footer>
-    &copy; Shimizuコーチング
-  </footer>
+  <footer>&copy; Shimizuコーチング</footer>
 </body>
 </html>
