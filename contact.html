@@ -8,12 +8,24 @@
 <body>
   <header>
     <h1>お問い合わせ</h1>
-    <nav><a href="index.html">サービス紹介</a><a href="support.html">サポート内容</a><a href="flow.html">ご利用の流れ</a><a href="faq.html">よくある質問</a><a href="works.html">施工事例</a><a href="voice.html">お客様の声</a><a href="contact.html">お問い合わせ</a></nav>
+    
+<nav>
+  <a href="index.html">トップ</a>
+  <a href="support.html">サポート内容</a>
+  <a href="faq.html">よくある質問</a>
+  <a href="works.html">施工事例</a>
+  <a href="contact.html">お問い合わせ</a>
+</nav>
+
   </header>
   <main>
-    <section>
-      <p>お問い合わせ ページは現在準備中です。</p>
-    </section>
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <label>お名前:<br><input type="text" name="name" required></label><br><br>
+      <label>メールアドレス:<br><input type="email" name="email" required></label><br><br>
+      <label>電話番号:<br><input type="tel" name="phone"></label><br><br>
+      <label>お問い合わせ内容:<br><textarea name="message" rows="6" cols="40" required></textarea></label><br><br>
+      <input type="submit" value="送信">
+    </form>
   </main>
   <footer>
     &copy; Shimizuコーチング
