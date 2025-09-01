@@ -8,13 +8,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: 'Helvetica Neue', sans-serif; margin: 0; background-color: #ffffff; color: #333; }
-    nav { display: flex; justify-content: center; background-color: #f2f2f2; border-bottom: 2px solid #5c432d; }
-    nav a { padding: 1em 1.5em; text-decoration: none; color: #5c432d; font-weight: bold; }
-    nav a:hover { background-color: #5c432d; color: white; }
+
+    /* ナビゲーションの改善 */
+    nav { 
+      display: flex; 
+      justify-content: center; 
+      background-color: #f2f2f2; 
+      border-bottom: 2px solid #5c432d; 
+      padding: 0.5em 0;
+    }
+    nav a { 
+      padding: 0.8em 1.2em; 
+      margin: 0 0.3em; 
+      text-decoration: none; 
+      color: #5c432d; 
+      font-weight: bold; 
+      border: 2px solid #5c432d; 
+      border-radius: 8px; 
+      background-color: #fff; 
+      transition: all 0.3s ease;
+    }
+    nav a:hover { 
+      background-color: #5c432d; 
+      color: white; 
+      transform: translateY(-2px);
+    }
+    nav a.active { 
+      background-color: #5c432d; 
+      color: #fff; 
+    }
+
     .main-visual { background: linear-gradient(to right, #5c432d, #a39e8b); color: white; padding: 3em 1em; text-align: center; }
     .main-visual h1 { font-size: 2em; margin-bottom: 0.5em; }
     .content { padding: 2em; max-width: 960px; margin: 0 auto; background: #fff; }
-    h1 { color: #ffffff; border-bottom: 2px solid #5c432d; padding-bottom: 0.3em; }
     h2 { color: #5c432d; border-bottom: 1px solid #ccc; padding-bottom: 0.2em; margin-top: 2em; }
     table { width: 100%; border-collapse: collapse; margin-bottom: 1em; table-layout: fixed; }
     th, td { border: 1px solid #ccc; padding: 1em; vertical-align: top; word-break: break-word; }
@@ -30,12 +56,11 @@
 
   <nav>
     <a href="index.html">トップ</a>
-    <a href="support.html">サービス内容</a>
+    <a href="support.html" class="active">サービス内容</a>
     <a href="works.html">施工事例</a>
     <a href="contact.html">お問い合わせ</a>
     <a href="faq.html">よくある質問</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXZmXjuFp3T9rJ2Aw52XK_z9Gf3I7Eg5g0O8vCTiM49RDnw/viewform" target="_blank">入会フォーム</a>
-  </nav>
   </nav>
 
   <div class="main-visual">
@@ -43,8 +68,6 @@
   </div>
 
   <div class="content">
-    <!-- ここに料金表などを挿入 -->
-        <h2>料金表</h2>
 
     <h2>【ベーシックプラン】</h2>
     <table>
@@ -62,151 +85,67 @@
           <td>入会費：30,000円＋税<br>月額会費：10,000円＋税</td>
           <td>相談：Chatで随時相談可。<span class="highlight">回数無制限</span>。<br>
           ※LINEでのやり取りは行っておりません。<br>
-          	Shimizuからの返信：原則24時間以内。<br>
-			</td>
+          Shimizuからの返信：原則24時間以内。</td>
           <td>不動産事業の第一歩を踏み出したい方へ。初心者様大歓迎！！やる気のある方。</td>
         </tr>
       </tbody>
     </table>
     <div class="details">
       <strong>▼詳細：</strong><br>
-      <br>
       物件選定や買付の方法がわからない方！<br>
       リフォームデザイン、入居付など、不動産に関することならOK！<br>
       チャットで気軽に質問できる環境を整え、物件選定から行動のサポートまで親身に対応します。<br>
       初心者ならではの疑問や不安に寄り添いながら、あなたのペースで着実にステップアップできるよう指導致します。<br>
-      大規模大家コミニュティに入会していたけど物件を買えずに挫折してしまった方や質問できずに退会してしまった方などもOK♪<br>
+      大規模大家コミュニティに入会していたけど物件を買えずに挫折してしまった方や質問できずに退会してしまった方などもOK♪<br>
     </div>
 
-    <h2>【オプション】（以下、ベーシックプラン入会者のみ申込可能）</h2>
+<h2>【オプション】（以下、ベーシックプラン入会者のみ申込可能）</h2>
 
-    <table>
-      <thead>
-        <tr>
-          <th style="width: 20%;">プラン名</th>
-          <th style="width: 20%;">料金</th>
-          <th style="width: 35%;">内容</th>
-          <th style="width: 25%;">対象者</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
- 
-          <td>買付OJT<br>サービス</td>
-          <td>参加費：1回30,000円＋税（交通費別）／件</td>
-          <td>私Shimizuが購入を検討する物件の内見に勉強目的で<span class="highlight">同行可</span>。物件見学時のチェックポイントや注意点をその場で共有します。</td>
-          <td>内見ってどこ見ればいいの？実際、買付出せない！<br>とにかく不安！まずは経験者について行きたい！<br>という初心者からベテランまで！</td>
-        </tr>
-      </tbody>
-    </table>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 20%;">プラン名</th>
+      <th style="width: 20%;">料金</th>
+      <th style="width: 35%;">内容</th>
+      <th style="width: 25%;">対象者</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>買付OJT<br>サービス</td>
+      <td>参加費：1回30,000円＋税（交通費別）／件</td>
+      <td>私Shimizuが購入を検討する物件の内見に勉強目的で<span class="highlight">同行可</span>。物件見学時のチェックポイントや注意点をその場で共有します。</td>
+      <td>内見ってどこ見ればいいの？実際、買付出せない！初心者からベテランまで！</td>
+    </tr>
+    <tr>
+      <td>間取図<br>作成サービス</td>
+      <td>１軒5,000円＋税</td>
+      <td>間取図を代行して作成致します。</td>
+      <td>見づらい間取図やリノベ前の間取図しか持ってない方！残置物撤去前だけどリフォームの打ち合わせ始めたい方！</td>
+    </tr>
+    <tr>
+      <td>リフォームOJT<br>ライトプラン</td>
+      <td>100,000円＋税</td>
+      <td>デザインレビュー、見積精査、発注判断などの<span class="highlight">オンライン相談10時間迄</span>、業者候補提案</td>
+      <td>リフォーム職人さんを自分で探すが、アドバイスが欲しい方。</td>
+    </tr>
+    <tr>
+      <td>リフォームOJT<br>プレミアムプラン</td>
+      <td>300,000円＋税</td>
+      <td>デザインレビュー、見積精査、発注判断などの<span class="highlight">オンライン相談8時間迄</span>、リフォーム業者候補提案、<span class="highlight">現地同席（1物件6回。個別対応)</span></td>
+      <td>段取りと見極めはリフォーム経験者に任せたい方</td>
+    </tr>
+  </tbody>
+</table>
     <div class="details">
       <strong>▼詳細：</strong><br>
-      実際の物件の内見・買付の際に、現地で一緒に雰囲気や温度感を学ぶサービス。<br>
-      土地値やリフォーム想定などの「事前スペック調査」はご自身にてお願いしております。<br>
-      交渉方法や現地での立ち回り、仲介業者さんとの話し方や効果的なワード等は事前にアドバイスします。<br>
-      ※同行立会対応エリア：一都三県 国道16号内側程度（←応相談）。交通費別途。<br>
-      ※あくまで物件を見る目を養うためです。物件購入の判断や価格の条件交渉等は本人が行います。
-    </div>
-
-    <table>
-      <thead>
-        <tr>
-          <th style="width: 20%;">プラン名</th>
-          <th style="width: 20%;">料金</th>
-          <th style="width: 35%;">内容</th>
-          <th style="width: 25%;">対象者</th>
-        </tr>
-      </thead>
-      <tbody>
-
-    <table>
-        <tr>
-          <td>間取図<br>作成サービス</td>　          
-          <td>１軒5,000円＋税</td>
-          <td>間取図を代行して作成致します。</td>
-          <td>見づらい間取図やリノベ前の間取図しか持ってない方！残置物撤去前だけどリフォームの打ち合わせ始めたい方！</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="details">
-      <strong>▼詳細：</strong><br>
-	１軒あたり建物面積100㎡位まで（※特殊物件の場合は応相談）<br>
-	リノベを安価に仕上げるのほか、入居募集や売却時にも、<span class="highlight">人に説明する上</span>で、間取図は必須です！<br>
-    全ての居室の写真（それぞれ四隅から撮影したもの）、キッチン、洗面所、浴室、トイレ、廊下、階段等の写真が必要です。<br>
-	既存間取図をベースに作成致します。部屋の寸法、バルコニーや外観等もわかれば、より正確なものをご提供できます。<br>
-	リノベなどにより間取変更等を行う場合は、どのように変更するか内容を指示願います。例．「洋室６畳とキッチンをつなげる」「キッチン東側の窓を潰す」など。<br>
-	既存間取図が１枚も無い場合や大量の残置物（概ね腰高以上）の写真しか無い場合等は動画も必要となります。<br>
-	提供ファイル形式：Excel（Microsoft Office Personal 2021）</div>
-
-    <table>
-      <thead>
-        <tr>
-          <th style="width: 20%;">プラン名</th>
-          <th style="width: 20%;">料金</th>
-          <th style="width: 35%;">内容</th>
-          <th style="width: 25%;">対象者</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-        
-        
-          <td>リフォームOJT<br>ライトプラン</td>　
-          <td>100,000円＋税</td>
-          <td>デザインレビュー、見積精査、発注判断などの<span class="highlight">オンライン相談10時間迄</span>、業者候補提案</td>
-          <td>リフォーム職人さんを自分で探すが、アドバイスが欲しい方。※基本的なPC作業ができる方が対象。</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="details">
-      <strong>▼詳細：</strong><br>
-      「このリフォームプランで本当に大丈夫？」そんな不安に寄り添うセカンドオピニオン型のサポートです。<br>
-      職人さんの選び方、計画の立て方、間取りや設備の問題点、見積の比較方法など、Zoom等で一緒にチェックしていきます。<br>
-      提出された見積書のレビュー（最大3社）や、ターゲット層に合ったプランへのアドバイスも行います。<br>
-      <span class="highlight">オンライン相談10時間迄</span>（1回あたり最長1.5時間、月3回迄）＋現地訪問対応（1回。1.5時間程度）。<br>
-      ※同行立会対応エリア：一都三県 国道16号内側程度（←応相談）。交通費別途。<br>
-      ※ライトプランで不足となった場合に限り、追加でプラン購入やプレミアムプラン移行は可能です！（その場合はライトプラン分は丸々割引させて頂きます。）
-    </div>
-
-    <table>
-      <thead>
-        <tr>
-          <th style="width: 20%;">プラン名</th>
-          <th style="width: 20%;">料金</th>
-          <th style="width: 35%;">内容</th>
-          <th style="width: 25%;">対象者</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>リフォームOJT<br>プレミアムプラン</td>
-          <td>300,000円＋税</td>
-          <td>デザインレビュー、見積精査、発注判断などの<span class="highlight">オンライン相談8時間迄</span>、リフォーム業者候補提案、<span class="highlight">現地同席（1物件6回。個別対応)</span></td>
-          <td>段取りと見極めはリフォーム経験者に任せたい方</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="details">
-      <strong>▼詳細：</strong><br>
-      予算に応じた業者候補を数社提案し、見積依頼用の資料づくりから業者精査・アドバイスまで対応致します。<br>
-      <span class="highlight">オンライン相談8時間迄</span>（1回あたり最長1.5時間、月3回迄）
-      実際に<span class="highlight">現地訪問</span>（月2回まで、各回2時間以内、1物件6回迄）
-      リフォーム職人との打合せに同席し、適切な内容・アドバイス、デザイン提案を致します。<br>
-      「自分でもある程度リフォーム知識は持っているけど、確実性を上げたい方」向けの安心プランです。<br>
-       ※同行立会対応エリア：一都三県 国道16号内側程度（←応相談）。交通費別途。<br>
- 
+      業者候補の提案、見積依頼書の作成補助、現地同席による実践サポート。<br>
+      ※対応エリア：一都三県（国道16号内側程度）。交通費別途。<br>
     </div>
 
     <div class="back-link">
       <a href="index.html">← トップページへ戻る</a>
-      
     </div>
-  </div>
-    <div class="join-btn-box">
-    <a class="join-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSebXZmXjuFp3T9rJ2Aw52XK_z9Gf3I7Eg5g0O8vCTiM49RDnw/viewform" target="_blank">
-      入会フォームはこちら
-    </a>
-  </div>
   </div>
 
   <footer>
@@ -214,5 +153,6 @@
     <a href="privacy.html" style="color: #FFF; text-decoration: underline;">プライバシーポリシー</a>｜
     <a href="tokutei.html" style="color: #FFF; text-decoration: underline;">特定商取引法に基づく表記</a>
   </footer>
+
 </body>
 </html>
