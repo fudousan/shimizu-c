@@ -2,54 +2,57 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>不動産初心者向けサービス内容｜Shimizuコーチング</title>
-  <meta name="description" content="Shimizuコーチングの不動産初心者向けサービス内容をご紹介。内見同行・リフォーム支援・投資判断のプロが個別にサポートします。">
-  <meta name="keywords" content="不動産, 初心者, サービス内容, 物件相談, 買付同行, リフォーム, コンサル, 投資サポート">
+  <title>施工事例｜Shimizuコーチング</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: 'Helvetica Neue', sans-serif; margin: 0; background-color: #ffffff; color: #333; }
 
-    /* ナビゲーションの改善 */
-    nav { 
-      display: flex; 
-      justify-content: center; 
-      background-color: #f2f2f2; 
-      border-bottom: 2px solid #5c432d; 
-      padding: 0.5em 0;
-    }
-    nav a { 
-      padding: 0.8em 1.2em; 
-      margin: 0 0.3em; 
-      text-decoration: none; 
-      color: #5c432d; 
-      font-weight: bold; 
-      border: 2px solid #5c432d; 
-      border-radius: 8px; 
-      background-color: #fff; 
-      transition: all 0.3s ease;
-    }
-    nav a:hover { 
-      background-color: #5c432d; 
-      color: white; 
-      transform: translateY(-2px);
-    }
-    nav a.active { 
-      background-color: #5c432d; 
-      color: #fff; 
+    nav { display: flex; justify-content: center; background-color: #f2f2f2; border-bottom: 2px solid #5c432d; padding: 0.5em 0; }
+    nav a { padding: 0.8em 1.2em; margin: 0 0.3em; text-decoration: none; color: #5c432d; font-weight: bold; border: 2px solid #5c432d; border-radius: 8px; background-color: #fff; transition: all 0.3s ease; }
+    nav a:hover { background-color: #5c432d; color: white; transform: translateY(-2px); }
+    nav a.active { background-color: #5c432d; color: #fff; }
+
+    h1 { background-color:#5c432d; color:white; padding:0.5em; font-size:1.5em; margin:0; }
+
+    /* ギャラリー部分をグリッド化 */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+      padding: 2em;
     }
 
-    .main-visual { background: linear-gradient(to right, #5c432d, #a39e8b); color: white; padding: 3em 1em; text-align: center; }
-    .main-visual h1 { font-size: 2em; margin-bottom: 0.5em; }
-    .content { padding: 2em; max-width: 960px; margin: 0 auto; background: #fff; }
-    h2 { color: #5c432d; border-bottom: 1px solid #ccc; padding-bottom: 0.2em; margin-top: 2em; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 1em; table-layout: fixed; }
-    th, td { border: 1px solid #ccc; padding: 1em; vertical-align: top; word-break: break-word; }
-    th { background: #5c432d; color: white; text-align: left; }
-    .details { margin-bottom: 2em; background: #eef3f8; padding: 1em; border-left: 5px solid #5c432d; }
-    .back-link { text-align: right; margin-top: 1em; }
-    .back-link a { color: #5c432d; text-decoration: none; }
-    .highlight { font-weight: bold; color: #333333; }
-    footer { background-color: #5c432d; color: white; text-align: center; padding: 1em; font-size: 0.9em; }
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .item {
+      background:white;
+      padding:10px;
+      border-radius:8px;
+      width:100%;
+      max-width:400px;
+      box-shadow:0 0 8px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+
+    .item img {
+      width:100%;
+      height:auto;
+      border-radius:5px;
+    }
+
+    .caption {
+      margin-top:10px;
+      font-weight:bold;
+      font-size:0.9em;
+    }
+
+    footer { background-color:#5c432d; color:white; text-align:center; padding:1em; font-size:0.9em; }
+    footer a { color:#fff; text-decoration:underline; }
   </style>
 </head>
 <body>
@@ -62,13 +65,9 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXZmXjuFp3T9rJ2Aw52XK_z9Gf3I7Eg5g0O8vCTiM49RDnw/viewform" target="_blank">入会フォーム</a>
   </nav>
 
-<h1 style="background-color:#5c432d; color:white; padding: 0.5em; font-size: 1.5em;">
-  初心者でもわかる！不動産施工事例集
-</h1>
+  <h1>初心者でもわかる！不動産施工事例集</h1>
 
   <div class="gallery">
-
-    <!-- 各事例：画像altにもキーワード追加 -->
     <div class="item">
       <img src="images/works12.jpg" alt="初心者向けニッチリフォーム事例">
       <div class="caption">ニッチで遊び心♪入居者様に気に入って頂けました</div>
@@ -118,61 +117,12 @@
       <img src="images/works10.jpg" alt="シックな空間にした不動産リフォーム">
       <div class="caption">シックに落ち着く空間に！</div>
     </div>
-
-    <div class="item">
-      <img src="images/works20.jpg" alt="アクセントクロス施工例">
-      <div class="caption">アクセントクロスで映えます！</div>
-    </div>
-
-    <div class="item">
-      <img src="images/works02.jpg" alt="塗装リフォームで外観改善">
-      <div class="caption">塗装するだけで見違えます！</div>
-    </div>
-
-    <div class="item">
-      <img src="images/works13.jpg" alt="玄関リフォーム実例">
-      <div class="caption">玄関も抜かりなく工夫をこしらえました</div>
-    </div>
-
-    <div class="item">
-      <img src="images/works14.jpg" alt="ユニットバス風リフォーム">
-      <div class="caption">ユニットバスではなくとも高級感UP!</div>
-    </div>
-
-    <div class="item">
-      <img src="images/works15.jpg" alt="2万円の和室リフォーム">
-      <div class="caption">和室も２万円で仕上がりました</div>
-    </div>
-
-    <div class="item">
-      <img src="images/works16.jpg" alt="キッチンリフォーム事例">
-      <div class="caption">キッチン入替はコスパ抜群！！</div>
-    </div>
-
-    <div class="item">
-      <img src="images/works17.jpg" alt="水回りの清潔感を意識した施工例">
-      <div class="caption">水回りは清潔感、命！</div>
-    </div>
-
-    <div class="item">
-      <img src="images/works18.jpg" alt="和室の照明活用例">
-      <div class="caption">和室も照明だけで和モダン♪</div>
-    </div>
-
-    <div class="item">
-      <img src="images/works19.jpg" alt="カウンター造作で家賃UP">
-      <div class="caption">カウンターを作るだけで大幅家賃UP！</div>
-    </div>
   </div>
 
-<div class="join-btn-box">
-    <a class="join-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSebXZmXjuFp3T9rJ2Aw52XK_z9Gf3I7Eg5g0O8vCTiM49RDnw/viewform" target="_blank">
-      入会フォームはこちら
-    </a>
-  </div>
-  
   <footer>
-    © 2025 Shimizuコーチング｜<a href="privacy.html">プライバシーポリシー</a>｜<a href="tokutei.html">特定商取引法に基づく表記</a>
+    © 2025 Shimizuコーチング｜
+    <a href="privacy.html">プライバシーポリシー</a>｜
+    <a href="tokutei.html">特定商取引法に基づく表記</a>
   </footer>
 </body>
 </html>
