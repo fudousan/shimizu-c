@@ -18,15 +18,34 @@
     footer { background-color: #5c432d; color: white; text-align: center; padding: 1em; font-size: 0.9em; }
   </style>
 </head>
-<body>
-  <nav style="background-color:#5c432d; padding: 0.5em;">
-    <a href="index.html" style="color:white; margin-right:1em; text-decoration:none;">トップ</a>
-    <a href="support.html" style="color:white; margin-right:1em; text-decoration:none;">サービス内容</a>
-    <a href="works.html" style="color:white; margin-right:1em; text-decoration:none;">施工事例</a>
-    <a href="contact.html" style="color:white; margin-right:1em; text-decoration:none;">お問い合わせ</a>
-    <a href="faq.html" style="color:white; text-decoration:none;">よくある質問</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXZmXjuFp3T9rJ2Aw52XK_z9Gf3I7Eg5g0O8vCTiM49RDnw/viewform" target="_blank">入会フォーム</a>
-  </nav>
+nav { 
+  display: flex; 
+  justify-content: center; 
+  background-color: #f2f2f2; 
+  border-bottom: 2px solid #5c432d; 
+  padding: 0.5em 0;
+}
+nav a { 
+  padding: 0.8em 1.2em; 
+  margin: 0 0.3em; 
+  text-decoration: none; 
+  color: #5c432d; 
+  font-weight: bold; 
+  border: 2px solid #5c432d; 
+  border-radius: 8px; 
+  background-color: #fff; 
+  transition: all 0.3s ease;
+}
+nav a:hover { 
+  background-color: #5c432d; 
+  color: white; 
+  transform: translateY(-2px);
+}
+nav a.active { 
+  background-color: #5c432d; 
+  color: #fff; 
+}
+
   </nav>
   <h1>不動産投資　初心者のためのよくある質問</h1>
 

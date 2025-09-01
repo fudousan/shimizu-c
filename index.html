@@ -39,14 +39,33 @@
 </head>
 <body>
   <header><h1>不動産初心者向け個別支援｜Shimizuコーチング</h1></header>
-  <nav>
-    <a href="index.html">トップ</a>
-    <a href="support.html">サービス内容</a>
-    <a href="works.html">施工事例</a>
-    <a href="contact.html">お問い合わせ</a>
-    <a href="faq.html">よくある質問</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXZmXjuFp3T9rJ2Aw52XK_z9Gf3I7Eg5g0O8vCTiM49RDnw/viewform" target="_blank">入会フォーム</a>
-  </nav>
+nav { 
+  display: flex; 
+  justify-content: center; 
+  background-color: #f2f2f2; 
+  border-bottom: 2px solid #5c432d; 
+  padding: 0.5em 0;
+}
+nav a { 
+  padding: 0.8em 1.2em; 
+  margin: 0 0.3em; 
+  text-decoration: none; 
+  color: #5c432d; 
+  font-weight: bold; 
+  border: 2px solid #5c432d; 
+  border-radius: 8px; 
+  background-color: #fff; 
+  transition: all 0.3s ease;
+}
+nav a:hover { 
+  background-color: #5c432d; 
+  color: white; 
+  transform: translateY(-2px);
+}
+nav a.active { 
+  background-color: #5c432d; 
+  color: #fff; 
+}
 
   <section class="main-visual">
     <h1>初心者大家さん<span style="background:#f9f2e4; color:#3e5d42; font-weight:bold; padding:4px 8px; border-radius:4px; font-size:1.1em;">個別支援サポート</span></h1>

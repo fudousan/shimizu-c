@@ -8,54 +8,33 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body { font-family: sans-serif; margin: 20px; background-color: #f5f5f5; }
-    nav {
-      background-color: #5c432d;
-      padding: 0.5em;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin-right: 1em;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .item {
-      background: white;
-      padding: 10px;
-      border-radius: 8px;
-      width: 300px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .item img {
-      width: 100%;
-      border-radius: 5px;
-    }
-    .caption {
-      margin-top: 10px;
-      font-weight: bold;
-      text-align: center;
-    }
-    footer {
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-    }
-    footer a {
-      color: #666;
-      text-decoration: underline;
-    }
-  </style>
-</head>
+nav { 
+  display: flex; 
+  justify-content: center; 
+  background-color: #f2f2f2; 
+  border-bottom: 2px solid #5c432d; 
+  padding: 0.5em 0;
+}
+nav a { 
+  padding: 0.8em 1.2em; 
+  margin: 0 0.3em; 
+  text-decoration: none; 
+  color: #5c432d; 
+  font-weight: bold; 
+  border: 2px solid #5c432d; 
+  border-radius: 8px; 
+  background-color: #fff; 
+  transition: all 0.3s ease;
+}
+nav a:hover { 
+  background-color: #5c432d; 
+  color: white; 
+  transform: translateY(-2px);
+}
+nav a.active { 
+  background-color: #5c432d; 
+  color: #fff; 
+}
 <body>
 
   <nav>
