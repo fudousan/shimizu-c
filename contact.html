@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>不動産初心者向けお問い合わせフォーム｜Shimizuコーチング</title>
-  <meta name="description" content="不動産投資を始めたい初心者の方へ。ShimizuコーチングではLINE・チャットで気軽に相談可能。物件選定や購入、リフォームまでサポート。こちらからお問い合わせください。">
-  <meta name="keywords" content="不動産, 初心者, 不動産投資, 問い合わせ, 個別相談, Shimizuコーチング">
+  <meta charset="UTF-8" />
+  <title>不動産初心者向けサービス内容｜Shimizuコーチング</title>
+  <meta name="description" content="Shimizuコーチングの不動産初心者向けサービス内容をご紹介。内見同行・リフォーム支援・投資判断のプロが個別にサポートします。">
+  <meta name="keywords" content="不動産, 初心者, サービス内容, 物件相談, 買付同行, リフォーム, コンサル, 投資サポート">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: 'Helvetica Neue', sans-serif; background-color: #ffffff; color: #333; margin: 0; padding: 0; }
-    nav { background-color: #5c432d; padding: 0.5em; }
-    nav a { color: white; margin-right: 1em; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .container { padding: 2em; max-width: 700px; margin: auto; }
-    h1 { background-color: #5c432d; color: white; padding: 1em; margin: 0; }
-    h2 { margin-top: 1em; }
-    input, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-size: 1em; }
-    button { padding: 10px 20px; font-size: 1em; background-color: #5c432d; color: white; border: none; border-radius: 4px; cursor: pointer; }
-    button:hover { background-color: #40301f; }
-    footer { text-align: center; font-size: 0.9em; padding: 1em; background-color: #f2f2f2; margin-top: 2em; }
-    footer a { color: #333; text-decoration: underline; }
+    body { font-family: 'Helvetica Neue', sans-serif; margin: 0; background-color: #ffffff; color: #333; }
+
+    /* ナビゲーションの改善 */
+    nav { 
+      display: flex; 
+      justify-content: center; 
+      background-color: #f2f2f2; 
+      border-bottom: 2px solid #5c432d; 
+      padding: 0.5em 0;
+    }
+    nav a { 
+      padding: 0.8em 1.2em; 
+      margin: 0 0.3em; 
+      text-decoration: none; 
+      color: #5c432d; 
+      font-weight: bold; 
+      border: 2px solid #5c432d; 
+      border-radius: 8px; 
+      background-color: #fff; 
+      transition: all 0.3s ease;
+    }
+    nav a:hover { 
+      background-color: #5c432d; 
+      color: white; 
+      transform: translateY(-2px);
+    }
+    nav a.active { 
+      background-color: #5c432d; 
+      color: #fff; 
+    }
+
+    .main-visual { background: linear-gradient(to right, #5c432d, #a39e8b); color: white; padding: 3em 1em; text-align: center; }
+    .main-visual h1 { font-size: 2em; margin-bottom: 0.5em; }
+    .content { padding: 2em; max-width: 960px; margin: 0 auto; background: #fff; }
+    h2 { color: #5c432d; border-bottom: 1px solid #ccc; padding-bottom: 0.2em; margin-top: 2em; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 1em; table-layout: fixed; }
+    th, td { border: 1px solid #ccc; padding: 1em; vertical-align: top; word-break: break-word; }
+    th { background: #5c432d; color: white; text-align: left; }
+    .details { margin-bottom: 2em; background: #eef3f8; padding: 1em; border-left: 5px solid #5c432d; }
+    .back-link { text-align: right; margin-top: 1em; }
+    .back-link a { color: #5c432d; text-decoration: none; }
+    .highlight { font-weight: bold; color: #333333; }
+    footer { background-color: #5c432d; color: white; text-align: center; padding: 1em; font-size: 0.9em; }
   </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html">トップ</a>
     <a href="support.html">サービス内容</a>
     <a href="works.html">施工事例</a>
-    <a href="contact.html">お問い合わせ</a>
+    <a href="contact.html" class="active">お問い合わせ</a>
     <a href="faq.html">よくある質問</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXZmXjuFp3T9rJ2Aw52XK_z9Gf3I7Eg5g0O8vCTiM49RDnw/viewform" target="_blank">入会フォーム</a>
   </nav>
-  </nav>
 
-  <h1>不動産初心者の方へ｜お問い合わせフォーム</h1>
+  <h1>お問い合わせ</h1>
 
   <div class="container">
-    <h2>不動産投資の第一歩を踏み出すあなたをサポートします。</h2>
-    <p>初心者の方からのご相談・ご質問を歓迎しています。<br>
-    必要事項を入力し、以下のフォームからお気軽にお問い合わせください。</p>
-
     <form action="https://formsubmit.co/h.shimizu136@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Shimizuコーチングへお問い合わせありがとうございます">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="この度はShimizuコーチングへお問い合わせありがとうございます。&#13;&#10;&#13;&#10;後程、お返事させて頂きます。&#13;&#10;下記メールアドレスから返信させて頂きますので、迷惑メールに入っている可能性もございます。&#13;&#10;数時間経過後も届かない場合はお手数ですが、下記までご連絡下さい。&#13;&#10;&#13;&#10;【Shimizuコーチング サポートデスク】&#13;&#10;Mail：h.shimizu136@gmail.com&#13;&#10;受付時間：9:00～17:00（土日祝、年末年始を除く）">
-
       <label for="name">お名前</label>
       <input type="text" id="name" name="お名前" required>
 
@@ -60,15 +82,10 @@
     </form>
   </div>
 
-<div class="join-btn-box">
-    <a class="join-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSebXZmXjuFp3T9rJ2Aw52XK_z9Gf3I7Eg5g0O8vCTiM49RDnw/viewform" target="_blank">
-      入会フォームはこちら
-    </a>
-  </div>
-  
   <footer>
-    © 2025 Shimizuコーチング｜<a href="privacy.html">プライバシーポリシー</a>｜<a href="tokutei.html">特定商取引法に基づく表記</a>
+    © 2025 Shimizuコーチング｜
+    <a href="privacy.html">プライバシーポリシー</a>｜
+    <a href="tokutei.html">特定商取引法に基づく表記</a>
   </footer>
-
 </body>
 </html>
